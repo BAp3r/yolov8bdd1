@@ -5,10 +5,10 @@ import yaml
 import torch
 import argparse
 import numpy as np
-from tools import load_model
+from model.tools import load_model
 from collections import Counter
-from util import time_sync, color
-from box import letterbox, inv_letterbox, non_max_suppression
+from utils import time_sync, color
+from utils.box import letterbox, inv_letterbox, non_max_suppression
 
 
 def annotate(img, pred, cls):

@@ -10,14 +10,14 @@ import numpy as np
 from torch import nn
 from tqdm import tqdm
 from valid import valid
-from loss import LossFun
+from utils.loss import LossFun
 from copy import deepcopy
 from torch.cuda import amp
-from tools import load_model
+from model.tools import load_model
 from dataset import LoadDataset
 from torch.optim import lr_scheduler
 from torch.utils.data import DataLoader
-from plot import plot_labels, plot_images
+from utils.plot import plot_labels, plot_images
 
 
 class EMA:  # exponential moving average
